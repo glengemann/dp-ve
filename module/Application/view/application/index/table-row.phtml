@@ -1,0 +1,19 @@
+<tr>
+  <td> <?= $this->product['name'] ?> </td>
+  <td> <?= $this->product['autor'] ?> </td>
+  <td>
+    <a class="btn btn-default btn-md" data-nopjax="true" href="<?= $this->product['urlPdf'] ?>">
+      Descargar
+    </a>
+  </td>
+  <td>
+    <a class="btn btn-default btn-md" data-nopjax="true" href="<?= $this->product['urlEpub'] ?>">
+      Descargar
+    </a>
+  </td>
+  <td>
+    <a target="_blank" class="btn btn-default btn-md" data-nopjax="true" href="<?= $this->product['urlHtml'] ?>">
+      Ver
+    </a>
+  </td>
+</tr>
