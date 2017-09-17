@@ -26,13 +26,8 @@
     <body>
       <div class="container">
         <div class="row">
-          <!-- Page header -->
-          <div class="col-md-4">
-            <div class="app-caption">dp-<i>venezuela</i></div>
-          </div>
-        </div>
-        <div class="col-md-12">
-          <p>Biblioteca de autores venezolanos bajo dominio público.</p>
+            <!-- <img src="http://etc.usf.edu/clipart/2600/2682/filigree-banner_17_lg.gif"> -->
+            <h4 align="center">BIBLIOTECA DE AUTORES VENEZOLANOS BAJO <b>DOMINIO PÚBLICO<b>.</h4>
         </div>
         <div class="row">
           <div class="col-md-12">
@@ -40,10 +35,11 @@
             <?= $this->content; ?>
           </div>
         </div>
-        <div class="row">
+        <div class="row footer">
           <div class="col-md-12">
             <hr>
-            <p><?= date('Y') ?> por Dominio Público Venezuela.</p>
+            <p><?= date('Y') ?> por Dominio Público Venezuela.  <a href="mailto:contacto@dominiopublico.org.ve?subject=[dp-ve]">Contactar</a>
+          </div>
         </div>
       </div> <!-- /container -->
       <?php echo $this->inlineScript() ?>
