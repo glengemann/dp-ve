@@ -13,10 +13,10 @@
         <!-- Le styles -->
         <?= $this->headLink(['rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico'])
             ->prependStylesheet($this->basePath('css/style.css'))
-            ->prependStylesheet($this->basePath('css/bootstrap-theme.min.css'))
-            ->prependStylesheet($this->basePath('css/bootstrap.min.css'))
+            // ->prependStylesheet($this->basePath('css/bootstrap.min.css'))
+            // ->prependStylesheet($this->basePath('css/bootstrap-theme.min.css'))
         ?>
-
+        <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css"> -->
         <!-- Scripts -->
         <?= $this->headScript()
             ->prependFile($this->basePath('js/bootstrap.min.js'))
@@ -24,24 +24,62 @@
         ?>
     </head>
     <body>
-      <div class="container">
-        <div class="row">
-            <!-- <img src="http://etc.usf.edu/clipart/2600/2682/filigree-banner_17_lg.gif"> -->
-            <h4 align="center">BIBLIOTECA DE AUTORES VENEZOLANOS BAJO <b>DOMINIO PÚBLICO<b>.</h4>
+      <header class="l-header">
+        <div class="l-container">
+          <div class="logo">
+            <a href="http://dominiopublico.org.ve/">BIBLIOTECA DE AUTORES VENEZOLANOS BAJO <b>DOMINIO PÚBLICO</b></a>
+          </div>
         </div>
-        <div class="row">
-          <div class="col-md-12">
+      </header>
+
+      <main>
+        <div class="l-container">
+          <div class="mrow">
             <!-- Page content placeholder -->
             <?= $this->content; ?>
-          </div>
+
+            <!-- -->
+            <div class="mcol c4">
+              <aside class="l-sidebar">
+                <div class="sections sidebar">
+                <section class="sidebar">
+                <header>Acerca de</header>
+                    <div class="articles sm">
+                      <article class="lism">
+                      <p>
+                      El proyecto <i>Dominio Público Venezuela</i> se propone publicar
+                      obras de autores venezolanos que esten en <b>Dominio Público</b>.
+                    </p><br>
+                      <p>
+                      Libros del siglo pasado en formatos de siglo XXI (PDF, EPUB y HTML).
+                    </p><br>
+                      <p>
+                        <a href="mailto:contacto@dominiopublico.org.ve?subject=[dp-ve]">Contactanos</a>
+                        y ayudanos a tener más libros.
+                      </p>
+                      </article>
+                    </div>
+                </section>
+                </div>
+              </aside>
+            </div>
+
+
+        </div> <!-- /container -->
+      </main>
+
+      <footer class="l-footer">
+        <div class="l-container">
+          <p><?= date('Y') ?> por Dominio Público Venezuela.</p>
+          <aside>
+            <p>Powered by Zend Framework 3 and inspired in Hugo Robust Theme.</p>
+            <p>
+              <a href="mailto:contacto@dominiopublico.org.ve?subject=[dp-ve]">Contactar</a>
+            </p>
+          </aside>
         </div>
-        <div class="row footer">
-          <div class="col-md-12">
-            <hr>
-            <p><?= date('Y') ?> por Dominio Público Venezuela.  <a href="mailto:contacto@dominiopublico.org.ve?subject=[dp-ve]">Contactar</a>
-          </div>
-        </div>
-      </div> <!-- /container -->
+      </footer>
+
       <?php echo $this->inlineScript() ?>
     </body>
 </html>

@@ -1,15 +1,11 @@
-<table class="table table-striped table-hover">
-  <tr>
-    <th>Libro</th>
-    <th>Autor</th>
-    <th>PDF</th>
-    <th>EPUB</th>
-    <th>HTML</th>
-  </tr>
-
-  <?php
-    foreach ($this->textos as $texto) {
-      echo $this->partial('application/index/table-row', ['product'=>$texto]);
-    }
-  ?>
-</table>
+<div class="mcol c8">
+  <div class="articles">
+    <div class="mrow">
+      <?php
+        foreach ($this->textos as $texto) {
+          echo $this->partial('application/index/table-row', ['product'=>$texto]);
+        }
+      ?>
+    </div>
+  </div>
+</div>

@@ -1,19 +1,26 @@
-<tr>
-  <td> <?= $this->product['name'] ?>  (selección de textos) </td>
-  <td class="autor"> <?= $this->product['autor'] ?> </td>
-  <td>
-    <a class="btn btn-default btn-md" data-nopjax="true" href="<?= $this->product['urlPdf'] ?>">
-      Descargar
-    </a>
-  </td>
-  <td>
-    <a class="btn btn-default btn-md" data-nopjax="true" href="<?= $this->product['urlEpub'] ?>">
-      Descargar
-    </a>
-  </td>
-  <td>
-    <a target="_blank" class="btn btn-default btn-md" data-nopjax="true" href="<?= $this->product['urlHtml'] ?>">
-      Ver
-    </a>
-  </td>
-</tr>
+<!-- Page content placeholder -->
+<div class="mcol c6">
+  <article class="li">
+      <div class="thumb thumb-be817c5e76ef3be96b6a7121dbb73220"></div>
+      <div class="inner">
+        <h2 class="title"><?= $this->product['name'] ?></h2>
+        <ul class="facts">
+          <li><i class="fa fa-bookmark" aria-hidden="true"></i><?= $this->product['autor'] ?></li>
+        </ul>
+        <div class="summary">
+          (selección de textos)
+          <div class="summary">
+            <a class="btn btn-default btn-md" data-nopjax="true" href="<?= $this->product['urlPdf'] ?>">
+              PDF
+            </a>
+            <a class="btn btn-default btn-md" data-nopjax="true" href="<?= $this->product['urlEpub'] ?>">
+              EPUB
+            </a>
+            <a target="_blank" class="btn btn-default btn-md" data-nopjax="true" href="<?= $this->product['urlHtml'] ?>">
+              Ver
+            </a>
+          </div>
+        </div>
+      </div>
+  </article>
+</div>
